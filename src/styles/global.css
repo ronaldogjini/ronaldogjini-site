@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fancy-border {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.fancy-border-2 {
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.height-custom-92vh {
+  min-height: 92vh;
+}
+
+.contact-background {
+  background-image: url("https://svgur.com/i/ZXH.svg");
+}
+
+.zoomOne {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  display: inline-block;
+}
+
+.zoomOne:hover {
+  transform: translateY(-30px);
+}
+
+.zoomTwo {
+  overflow: hidden;
+}
+
+.zoomTwo img {
+  /* width: 100%; */
+  width: 600px;
+  transition: 0.5s all ease-in-out;
+}
+
+.zoomTwo:hover img {
+  transform: scale(1.2);
+}
+
+/* ============= Animation background ========= */
+.custom-background {
+  /* background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%); */
+  background: #0a0c11;
+}
+
+.cont .alternate-background:nth-child(odd) {
+  background: white;
+}
+
+.cont .alternate-background:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover {
+  transform: scale(1.5);
+}
+
+.background {
+  /* background: linear-gradient(132deg, #fc415a, #591bc5, #212335);
+     */
+
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /* background: linear-gradient(132deg, #aa041a, #591bc5, #212335); */
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  min-height: 92vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px;
+  z-index: 0;
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #d7d4e4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+  z-index: 1;
+}
+.cube:nth-child(2n) {
+  border-color: #fff;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+/* @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } */
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
