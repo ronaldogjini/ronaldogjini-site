@@ -16,6 +16,12 @@ const companies = [
 
     },
     {
+        companyName: "Point Hotel Management",
+        companyDescription: "A fully featured hotel management suite with a custom booking engine, room management, and houskeeping panel.",
+        companyURL: "https://master.ddhjc7cf0obl7.amplifyapp.com/",
+        companyLogo: "/img/projects/point.webp"
+    },
+    {
         companyName: "Bear PawBakery",
         companyDescription: "The first creamer company in the United Kingdom with the highest quality.",
         companyURL: "https://www.bearpawbakery.com/",
@@ -71,6 +77,29 @@ function Portfolio() {
                         </div>
                     </div>
                 </div >
+
+                <div className=" py-8 z-10">
+                    <div className="max-w-screen-xl rounded-xl shadow-md mx-auto overflow-hidden">
+                        <div className="lg:flex justify-between items-center">
+                            <div className='p-8 space-y-4'>
+                                <h2 className="text-5xl  tracking-wide text-black font-bold">Point Hotel Management</h2>
+                                <p className="text-gray-500 text-2xl">A fully featured hotel management suite with a custom booking engine, room management, and houskeeping panel.</p>
+                                <div className=" text-blue-500 font-semibold">
+                                    <a className="flex items-center text-lg" target="_blank" rel="nofollow noopener noreferrer" href="https://master.ddhjc7cf0obl7.amplifyapp.com/">Visit site <ArrowRightIcon className=" ml-2 h-6 w-6 text-blue-500" /></a>
+                                </div>
+                            </div>
+                            <div class="md:flex-shrink-0">
+                                <StaticImage
+                                    className="w-full md:h-full"
+                                    src="../images/projects/point.webp"
+                                    alt="Point Hotel Management"
+                                    width={550}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div >
+
 
                 <div className=" py-8 z-10">
                     <div className="max-w-screen-xl rounded-xl shadow-md mx-auto overflow-hidden">
