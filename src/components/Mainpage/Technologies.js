@@ -5,8 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 function Technologies() {
     return (
         <div id="experience" className="custom-background py-16 px-4">
-            <div className="max-w-screen-lg mx-auto">
-                <div className="max-w-lg mx-auto overflow-hidden md:max-w-screen-lg">
+            <div className="max-w-screen-xl mx-auto">
+                <div className="min-w-screen-xl overflow-hidden md:max-w-screen-lg">
                     <p className="text-2xl text-white">Throughout my life I have worked with various platforms and technologies.<br />
                         I have experience in creating custom platforms based on customers' requirements on the latest and most popular technologies in React, Vue, Laravel and more.
                     </p>

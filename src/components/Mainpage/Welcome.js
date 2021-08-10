@@ -4,20 +4,23 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function Welcome() {
     return (
-        <div className="max-w-screen-xl mx-auto pt-5 md:pt-20">
-            <div className="md:flex px-4 items-center justify-center">
-                <div className="text-center md:text-left">
-                    <h1 className="max-w-screen-sm text-5xl text-white font-extrabold mb-4 ">Hello! I am Ronaldo, a Freelance Developer</h1>
-                    <button className="bg-red-500 hover:bg-red-700 rounded-xl text-white px-4 py-2 my-8 font-bold mt-5 z-auto">
+        <div className="max-w-screen-xl mx-auto pt-5 md:py-10">
+            <div className="md:flex px-4 items-center h-full">
+                <div data-sal="slide-up" data-sal-duration="700" className="md:w-1/2 text-center md:text-left">
+                    <h1 className="text-5xl font-extrabold mb-4 ">Hello! I am <span className="text-red-500">Ronaldo</span>, a Freelance Developer</h1>
+                    <p className="text-gray-700 text-lg pt-4">I am a developer with a passion for creating new and <strong>exciting projects</strong>.
+                        Each stage of product development is important, starting from the first conception, <strong>designing</strong> the first
+                        sketch, all the way to creating the final <strong>working product</strong>.</p>
+                    <button className="bg-red-500 text-lg hover:bg-red-700 rounded-xl text-white px-6 py-2 font-semibold mt-5 z-auto">
                         <Link to="/contact">Contact me</Link>
                     </button>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex md:w-1/2 justify-center md:justify-end py-8">
                     <StaticImage
                         placeholder="dominantColor"
                         width={400}
                         height={400}
-                        className="max-h-96 rounded-full z-50"
+                        className="max-h-96 rounded-full"
                         src="../../images/introduction/profile.webp"
                         alt="Ronaldo Gjini">
                     </StaticImage>

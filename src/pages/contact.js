@@ -4,7 +4,7 @@ import ConfirmationModal from "../components/Effects/ConfirmationModal"
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-export default function contact() {
+export default function Contact() {
 
     let [isSuccessful, setIsSuccessful] = useState(false)
     let [isError, setIsError] = useState(false)

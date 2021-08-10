@@ -3,8 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 function Education() {
     return (
-        <div className="max-w-screen-lg mx-auto py-16">
-            <div id="about" className="max-w-lg mx-auto bg-white rounded-xl overflow-hidden md:max-w-screen-lg">
+        <div className="max-w-screen-xl mx-auto py-16">
+            <div id="about" className="max-w-screen-xl mx-auto bg-white rounded-xl overflow-hidden md:max-w-screen-xl">
                 <h2 className="text-5xl uppercase font-bold pb-8 mx-auto text-center">Education</h2>
                 <div className="md:flex items-center px-8 md:px-0">
                     <div className="pt-8">
