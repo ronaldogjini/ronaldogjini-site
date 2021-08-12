@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function Technologies() {
     return (
-        <div id="technologies" className="py-16 px-4 bg-gray-50">
+        <div id="technologies" className="pb-16 px-4 bg-gray-50">
             <div data-sal="slide-up" data-sal-duration="700" className="max-w-screen-xl mx-auto">
                 <p className="tracking-wide text-6xl text-black font-bold text-center py-8">
                     Latest
@@ -14,7 +14,7 @@ function Technologies() {
                 <p className="tracking-wide text-2xl text-center text-gray-500">
                     Turn your ideas into projects quickly. Enter the market with a fast and responsive project build on the latest technologies.
                 </p>
-                <div className=" md:flex justify-around items-center ">
+                <div className="hidden md:flex justify-around items-center ">
                     <StaticImage
                         className="mx-auto mt-16"
                         alt="React"

@@ -4,6 +4,7 @@ import Welcome from "./Welcome"
 import ProjectToLife from "./ProjectToLife"
 import LatestTechnologies from "./LatestTechnologies"
 import WorkWithMe from './WorkWithMe'
+import PortfolioExamples from './PortfolioExamples'
 
 function Mainpage() {
 
@@ -15,6 +16,7 @@ function Mainpage() {
             </div>
 
             <ProjectToLife />
+            <PortfolioExamples />
             <LatestTechnologies />
             <WorkWithMe />
         </div>

@@ -11,6 +11,9 @@ function Welcome() {
                     <p className="text-gray-700 text-lg pt-4">I am a developer with a passion for creating new and <strong>exciting projects</strong>.
                         Each stage of product development is important, starting from the first conception, <strong>designing</strong> the first
                         sketch, all the way to creating the final <strong>working product</strong>.</p>
+
+                    <p className="text-xl pt-8">Start your <span className="     font-bold">blog</span>
+                        , <span className=" font-bold">online shop</span> or <span className=" font-bold">website</span> right now.</p>
                     <button className="bg-red-500 text-lg hover:bg-red-700 rounded-xl text-white px-6 py-2 font-semibold mt-5 z-auto">
                         <Link to="/contact">Contact me</Link>
                     </button>
