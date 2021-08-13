@@ -8,20 +8,18 @@ import { HomeIcon } from '@heroicons/react/outline'
 
 function PortfolioExamples() {
     return (
-        <div className="bg-gray-50 pt-4 pb-16 ">
+        <div id="technologies" className="bg-gray-50 pt-4 pb-16 ">
 
             <div data-sal="slide-up" data-sal-duration="700">
                 <h2 className="text-center text-5xl my-8 font-bold">Latest Projects</h2>
-
                 <div className="grid grid-cols-1 md:grid-cols-3 mx-auto md:space-x-8 px-8 ">
-
                     <div className="bg-white rounded-xl shadow-md flex items-center my-8">
                         <div className="flex w-full">
                             <div className="px-4 pt-8 w-full md:w-1/2">
                                 <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold pb-8">Wordpress</div>
-                                <p className="block mt-1 text-2xl leading-tight font-medium text-black hover:underline">
+                                <a href="https://www.naldotech.com" target="_blank" className="block mt-1 text-2xl leading-tight font-medium text-black hover:underline">
                                     NaldoTech
-                                </p>
+                                </a>
                                 <p className="block mt-2 text-xl leading-tight font-medium text-gray-500">
                                     Tech Blog
                                 </p>
@@ -37,14 +35,13 @@ function PortfolioExamples() {
                         </div>
                     </div>
 
-
                     <div className="bg-white rounded-xl shadow-md flex items-center my-8">
                         <div className="flex w-full">
                             <div className="px-4 pt-8 w-full md:w-1/2">
                                 <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold pb-8">Java</div>
-                                <p className="block mt-1 text-2xl leading-tight font-medium text-black hover:underline">
+                                <a href="https://www.whatlanguageisthistext.com/" target="_blank" target="_blank" className="block mt-1 text-2xl leading-tight font-medium text-black hover:underline">
                                     NLP
-                                </p>
+                                </a>
                                 <p className="block mt-2 text-xl leading-tight font-medium text-gray-500">
                                     AI Processor
                                 </p>
@@ -54,7 +51,7 @@ function PortfolioExamples() {
                                 <img
                                     className="h-64 w-full object-cover rounded-r-xl"
                                     src="../../../nlp.webp"
-                                    alt="NaldoTech"
+                                    alt="What Language Is This Text"
                                 />
                             </div>
                         </div>
@@ -76,7 +73,7 @@ function PortfolioExamples() {
                                 <img
                                     className="h-64 w-full object-cover rounded-r-xl"
                                     src="../../../point.webp"
-                                    alt="NaldoTech"
+                                    alt="Hotel Booking Engine"
                                 />
                             </div>
                         </div>

@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function Technologies() {
     return (
-        <div id="technologies" className="pb-16 px-4 bg-gray-50">
+        <div className="pb-16 px-4 bg-gray-50">
             <div data-sal="slide-up" data-sal-duration="700" className="max-w-screen-xl mx-auto">
                 <p className="tracking-wide text-6xl text-black font-bold text-center py-8">
                     Latest
