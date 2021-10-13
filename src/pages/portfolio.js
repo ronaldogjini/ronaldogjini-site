@@ -3,8 +3,69 @@ import Layout from '../components/Layout'
 import SEO from "../components/SEO"
 import { StaticImage } from 'gatsby-plugin-image'
 import { ArrowRightIcon } from '@heroicons/react/solid'
+import PortfolioWork from '../components/Portfolio/PortfolioWork'
 
 
+const projects = [
+    {
+        title: "NaldoTech",
+        description: "A tech platform focused on the latest gadgets",
+        logo: "https://www.naldotech.com/wp-content/uploads/2020/07/naldotech-logo-nt.png",
+        logoAlt: "naldotech logo",
+        cover: "../../naldo.png",
+        coverAlt: "NaldoTech cover",
+        technologies: ["Wordpress", "Java Spring"],
+        link: "https://www.naldotech.com"
+    },
+    {
+        title: "Point",
+        description: "A fully featured hotel booking engine",
+        logo: "../../../point-logo.webp",
+        logoAlt: "Point Hotel logo",
+        cover: "../../../point.webp",
+        coverAlt: "Point hotel cover",
+        technologies: ["VueJS", "Laravel"],
+        link: "https://master.ddhjc7cf0obl7.amplifyapp.com"
+
+    },
+    {
+        title: "NLP Language Identifier",
+        description: "A complete language identifier using the N-GRAM model",
+        logo: "../../../nlp-logo.webp",
+        logoAlt: "NLP Language Identifier logo",
+        cover: "../../../nlp.webp",
+        coverAlt: "NLP Language Identifier cover",
+        technologies: ["React", "Java", "Spring"],
+        link: "https://www.whatlanguageisthistext.com"
+
+    },
+    {
+        title: "MusicTube",
+        description: "A fully featured music player",
+        logo: "../../../musictube-logo.png",
+        logoAlt: "MusicTube logo",
+        cover: "../../../musictube.webp",
+        coverAlt: "MusicTube cover",
+        technologies: ["React", "Redux"]
+    },
+    {
+        title: "Student Center",
+        description: "Student Center Mobile App",
+        logo: "../../../student-logo.webp",
+        logoAlt: "Student center logo",
+        cover: "../../../student.webp",
+        coverAlt: "Student center cover",
+        technologies: ["Java"]
+    },
+    {
+        title: "Bear PawBakery",
+        description: "The first creamer company in the United Kingdom with the highest quality",
+        logo: "../../../bearpawbakery-logo.webp",
+        logoAlt: "Bear PawBakery logo",
+        cover: "../../../bearpawbakery.webp",
+        coverAlt: "Bear PawBakery cover",
+    }
+]
 
 const companies = [
     {
@@ -57,8 +118,10 @@ function Portfolio() {
                     <p className="">WEB • MOBILE • UX • BRANDING </p>
                 </div>
 
-
-                <div className="md:flex max-w-screen-xl mx-auto pt-8">
+                <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 mx-auto md:space-x-8">
+                    {projects.map(project => <PortfolioWork project={project} />)}
+                </div>
+                {/* <div className="md:flex max-w-screen-xl mx-auto pt-8">
                     <div className="px-4 pb-16 md:w-1/2">
                         <StaticImage
                             className="w-full"
@@ -89,9 +152,9 @@ function Portfolio() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="md:flex max-w-screen-xl mx-auto">
+                {/* <div className="md:flex max-w-screen-xl mx-auto">
                     <div className="px-4 pb-16 md:w-1/2">
                         <StaticImage
                             className="w-full"
@@ -152,7 +215,7 @@ function Portfolio() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

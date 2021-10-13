@@ -9,7 +9,8 @@ const projects = [
         logo: "https://www.naldotech.com/wp-content/uploads/2020/07/naldotech-logo-nt.png",
         logoAlt: "naldotech logo",
         cover: "../../naldo.png",
-        coverAlt: "NaldoTech cover"
+        coverAlt: "NaldoTech cover",
+        technologies: ["Wordpress, Java Spring"]
 
     },
     {
@@ -18,7 +19,8 @@ const projects = [
         logo: "../../../point-logo.webp",
         logoAlt: "Point Hotel logo",
         cover: "../../../point.webp",
-        coverAlt: "Point hotel cover"
+        coverAlt: "Point hotel cover",
+        technologies: ["VueJS, Laravel"]
 
     },
     {
@@ -27,7 +29,9 @@ const projects = [
         logo: "../../../musictube-logo.png",
         logoAlt: "MusicTube logo",
         cover: "../../../musictube.webp",
-        coverAlt: "MusicTube cover"
+        coverAlt: "MusicTube cover",
+        technologies: ["React, Redux,"]
+
 
     }
 ]
@@ -39,7 +43,7 @@ function PortfolioExamples() {
 
             <div data-sal="slide-up" data-sal-duration="700">
                 <h2 className="text-center text-5xl my-8 font-bold">Latest Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 mx-auto md:space-x-8 px-8 ">
+                <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 px-8 ">
                     {projects.map(project => <PortfolioElement project={project} />)}
                 </div>
                 <div className=" text-center">

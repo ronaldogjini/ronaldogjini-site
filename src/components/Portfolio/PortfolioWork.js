@@ -1,26 +1,26 @@
 import React from 'react'
-import { ArrowRightIcon } from '@heroicons/react/solid'
+import { Link } from 'gatsby'
+import ProjectTechnologies from './ProjectTechnologies'
 
-
-
-function PortfolioWork(props) {
+function PortfolioWork({ project }) {
     return (
-        <div className=" py-8 z-10">
-            <div className="max-w-screen-xl rounded-xl shadow-md mx-auto overflow-hidden">
-                <div className="lg:flex justify-between items-center">
-                    <div className='p-8 space-y-4'>
-                        <h2 className="text-5xl  tracking-wide text-black font-bold">{props.company.companyName}</h2>
-                        <p className="text-gray-500 text-2xl">{props.company.companyDescription}</p>
-                        <div className=" text-blue-500 font-semibold">
-                            <a className="flex items-center text-lg" target="_blank" rel="nofollow noopener noreferrer" href={props.company.companyURL}>Visit site <ArrowRightIcon className=" ml-2 h-6 w-6 text-blue-500" /></a>
+        <Link to={project.link}>
+            <div class="py-4 px-4">
+                <div class=" ">
+                    <div class="bg-white relative shadow rounded-lg text-gray-800 hover:shadow-lg transform hover:scale-105 duration-500 z-0">
+                        <img src={project.cover} alt={project.coverAlt} class="h-96 w-full rounded-lg object-center object-cover" />
+                        <div class="flex justify-center">
+                            <img src={project.logo} alt={project.logoAlt} class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16" />
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-3xl text-center">{project.title}</div>
+                            <div class="text-lg text-gray-400 text-center my-2">{project.description}</div>
+                            {project.technologies ? <ProjectTechnologies technologies={project.technologies} /> : ''}
                         </div>
                     </div>
-                    <div class="md:flex-shrink-0  zoomTwo">
-                        <img class="w-full  md:h-full " src={props.company.companyLogo} />
-                    </div>
                 </div>
-            </div>
-        </div >
+            </div >
+        </Link>
     )
 }
 
