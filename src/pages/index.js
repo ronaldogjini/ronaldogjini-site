@@ -8,7 +8,7 @@ export default function Home() {
 
     <Layout>
       <SEO
-        title="Ronaldo Gjini | Software Development"
+        title="Ronaldo Gjini - Software Developer &amp; Enginner"
         description="Welcome to my personal website. Here you can learn more about my projects and web development experience."
       />
       <Mainpage />

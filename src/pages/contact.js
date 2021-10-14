@@ -40,7 +40,7 @@ export default function Contact() {
         <Layout>
 
             <SEO
-                title="Ronaldo Gjini | Contact"
+                title="Ronaldo Gjini - Contact"
                 description="Contact Ronaldo Gjini and create a brand new program."
             />
             <div class="flex items-center height-custom-92vh bg-gray-100    dark:bg-gray-900">

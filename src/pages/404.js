@@ -6,7 +6,7 @@ function NotFound() {
     return (
         <Layout>
             <SEO
-                title="Ronaldo Gjini | Not Found"
+                title="Ronaldo Gjini - Not Found"
                 description="404 Not Found."
             />
             <div className="w-screen h-screen flex  justify-center content-center flex-wrap">

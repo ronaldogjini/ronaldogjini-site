@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from "../components/SEO"
-import { StaticImage } from 'gatsby-plugin-image'
-import { ArrowRightIcon } from '@heroicons/react/solid'
 import PortfolioWork from '../components/Portfolio/PortfolioWork'
 
 
@@ -67,49 +65,12 @@ const projects = [
     }
 ]
 
-const companies = [
-    {
-        companyName: "NaldoTech",
-        companyDescription: "Tech site focused on the latest news and guides about technology.",
-        companyURL: "https://www.naldotech.com",
-        companyLogo: "/img/projects/naldo.png"
-        // companyLogo: "https://www.naldotech.com/wp-content/uploads/2020/07/naldotech-main-logo.png"
-
-    },
-    {
-        companyName: "Point Hotel Management",
-        companyDescription: "A fully featured hotel management suite with a custom booking engine, room management, and houskeeping panel.",
-        companyURL: "https://master.ddhjc7cf0obl7.amplifyapp.com/",
-        companyLogo: "/img/projects/point.webp"
-    },
-    {
-        companyName: "Bear PawBakery",
-        companyDescription: "The first creamer company in the United Kingdom with the highest quality.",
-        companyURL: "https://www.bearpawbakery.com/",
-        companyLogo: "/img/projects/bearpawbakery.webp"
-    },
-    {
-        companyName: "LifeMagazine",
-        companyDescription: "A lifestyle magazine for everyone.",
-        companyURL: "https://lifemagazine.al/",
-        companyLogo: "/img/projects/lifemagazine.webp"
-    }
-    ,
-    {
-        companyName: "Chunkzone",
-        companyDescription: "Chunkzone is an online technology platform that provides downloading services",
-        companyURL: "https://lifemagazine.al/",
-        companyLogo: "/img/projects/chunkzone.webp"
-    }
-
-]
-
 function Portfolio() {
 
     return (
         <Layout>
             <SEO
-                title="Ronaldo Gjini | Portfolio"
+                title="Ronaldo Gjini - Portfolio"
                 description="Software Projects developed by Ronaldo Gjini."
             />
             <div className="max-w-full">
